@@ -10,6 +10,15 @@
     });
 
 
+	window.addEventListener('scroll', function() {
+		var image = document.getElementById('logo');
+		if (window.scrollY > 15) {
+			image.style.marginTop = '10px';
+		} else {
+			image.style.marginTop = '0';
+		}
+	});
+
 	$(window).scroll(function() {
 	  var scroll = $(window).scrollTop();
 	  var box = $('.header-text').height();

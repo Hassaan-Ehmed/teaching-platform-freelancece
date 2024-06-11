@@ -561,6 +561,10 @@ Header Style
 }
 
 @media (max-width: 767px) {
+
+  .search-input{
+    display: none;
+  }
   .background-header .main-nav .nav,
   .header-area .main-nav .nav {
     background-color: #f1f0fe;
