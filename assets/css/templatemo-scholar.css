@@ -285,6 +285,10 @@ Header Style
 --------------------------------------------- 
 */
 
+
+.logo > img{
+  display: none;
+}
 .background-header {
   background-color: #7a6ad8 !important;
   border-radius: 0px 0px 25px 25px;
@@ -547,7 +551,10 @@ Header Style
 .visible{
   display:inline !important;
 }
+.main-headingg{
+  display: block;
 
+}
 @media (max-width: 1200px) {
   .header-area .main-nav .nav li {
     padding-left: 2px;
@@ -562,9 +569,38 @@ Header Style
 
 @media (max-width: 767px) {
 
+
+  .header-area .main-nav .logo h1{
+
+    font-size: 17px;  
+ 
+  }
+
+
+  /* .main-nav{
+    width: 90%;
+    display: flex;
+     background-color: #1e1e1e;
+    flex-direction:row-reverse ;
+  } */
+
+  .logo{
+   display: flex; justify-content: center; align-items: center; position: absolute; left: 0 ;
+   }
+
+  
+   .main-headingg{
+    display: none;
+   }
+.logo > img{
+  display: block;
+}
+
+
   .search-input{
     display: none;
-  }
+  } 
+  
   .background-header .main-nav .nav,
   .header-area .main-nav .nav {
     background-color: #f1f0fe;

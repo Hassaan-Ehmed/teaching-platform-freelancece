@@ -12,8 +12,21 @@
 
 	window.addEventListener('scroll', function() {
 		var image = document.getElementById('logo');
+		var mainHeading = document.querySelector(".main-headingg");
 		if (window.scrollY > 15) {
 			image.style.marginTop = '10px';
+			mainHeading.style.marginTop = '10px';
+			
+			} else {
+			mainHeading.style.marginTop = '0';
+			image.style.marginTop = '0';
+		}
+	});
+
+	window.addEventListener('scroll', function() {
+		var image = document.getElementById('mobile-logo');
+		if (window.scrollY > 15) {
+			image.style.marginTop = '0';
 		} else {
 			image.style.marginTop = '0';
 		}
